@@ -28,7 +28,7 @@ Bot Owner Only
 """
 
 ABOUT = """
-Vaa Arunachalam Nee varuvanu Therium 
+✰ ᴠᴀᴀ ᴀʀᴜɴᴀᴄʜᴀᴀʟᴀᴍ ɴᴇᴇ ᴠᴀʀᴜᴠᴀɴᴜ ᴛʜᴇʀɪᴜᴍ᯾
 """
 
 
