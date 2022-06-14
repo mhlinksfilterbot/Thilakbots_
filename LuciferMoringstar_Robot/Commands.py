@@ -49,10 +49,10 @@ async def start(bot, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 ᴊᴏɪɴ ᴍʜʟɪɴᴋs ᴄʜᴀɴɴᴇʟ 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("📢 Join Updates channel 📢", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 ᴛʀʏ ᴀɢᴀɪɴ", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔄 Try again ", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('ᴍᴏʀᴇ ᴍᴏᴠɪᴇS', url=f'https://t.me/+gyZFP-mFh7YyN2Q1')
+                        InlineKeyboardButton('More Movies', url=f'https://t.me/+gyZFP-mFh7YyN2Q1')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -331,7 +331,7 @@ async def bot_info(bot, message):
     buttons = [
         [
             
-            InlineKeyboardButton('ᴊᴏɪɴ ᴜs', url=f'https://t.me/+gyZFP-mFh7YyN2Q1')
+            InlineKeyboardButton('Join us', url=f'https://t.me/+gyZFP-mFh7YyN2Q1')
         ]
         ]
     await message.reply(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
