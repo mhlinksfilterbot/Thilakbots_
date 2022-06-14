@@ -275,22 +275,29 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
                 return
         elif query.data == "help":
-            buttons = [
-                [
-                    InlineKeyboardButton('ᴍᴏʀᴇ ᴍᴏᴠɪᴇs', url=f'https://t.me/+gyZFP-mFh7YyN2Q1')
-                ]
-                ]
-            await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-
+            buttons = [[
+                InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
+                InlineKeyboardButton('Sᴛᴀᴛᴜs', callback_data='stats')
+            ]]
+            reply_markup = InlineKeyboardMarkup(buttons)
+            await query.message.edit_text(
+                text=script.HELP_TXT.format(query.from_user.mention),
+                reply_markup=reply_markup,
+                parse_mode='html'
+            )
         elif query.data == "about":
-            buttons = [
-                [
-                    InlineKeyboardButton('ᴍᴏʀᴇ ᴍᴏᴠɪᴇs', url=f'https://t.me/+gyZFP-mFh7YyN2Q1')
-                ]
-                ]
-            await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
-
-
+            buttons = [[
+                InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
+                InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close_data'
+                ],[
+                InlineKeyboardButton('ᴍᴏʀᴇ ᴍᴏᴠɪᴇs', url=f'https://t.me/+gyZFP-mFh7YyN2Q1'
+                ]]
+                reply_markup = InlineKeyboardMarkup(buttons)
+                await query.message.edit_text(
+                    text=script.ABOUT_TXT.format(temp.B_NAME),
+                    reply_markup=reply_markup,
+                    parse_mode='html'             
+            )
         elif query.data.startswith("pr0fess0r_99"):
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
