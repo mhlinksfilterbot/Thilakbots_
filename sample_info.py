@@ -7,8 +7,8 @@ BOT_TOKEN = '123456:LuciferMoringstar_Robot-zyx57W2v1u123ew11'
 USERBOT_STRING_SESSION = 'LuciferMoringstar_Robot'
 
 # Bot settings
-CACHE_TIME = 300
-USE_CAPTION_FILTER = False
+CACHE_TIME = 8
+USE_CAPTION_FILTER = True
 
 # Admins, Channels & Users
 ADMINS = [12345789, 'admin123', 987654321]
@@ -23,7 +23,7 @@ COLLECTION_NAME = 'channel_files'  # If you are using the same database, then us
 
 # Messages
 START_MSG = """
-**Hi, I'm Media Search bot**
+**VANAKAM DAA MAPLEE TELEGRAM LA  ERUNTHU**
 
 Here you can search files in inline mode. Just press follwing buttons and start searching.
 """
